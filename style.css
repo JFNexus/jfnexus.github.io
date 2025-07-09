@@ -75,8 +75,7 @@ nav a.active, nav a:hover {
     text-shadow: 0 0 3px var(--accent-color);
 }
 
-
-/* --- Contenido Principal --- */
+/* --- Contenido Principal (Homepage) --- */
 main {
     padding: 60px 20px;
 }
@@ -97,7 +96,7 @@ h1 {
     margin-bottom: 50px;
 }
 
-/* --- Módulo de Libro Destacado --- */
+/* --- Módulo de Libro Destacado (Homepage) --- */
 .featured-book {
     display: flex;
     gap: 40px;
@@ -141,7 +140,6 @@ h1 {
     box-shadow: 0 0 15px var(--accent-color);
 }
 
-
 /* --- Footer --- */
 footer {
     border-top: 1px solid #333;
@@ -150,7 +148,8 @@ footer {
     color: #666;
     font-size: 0.9em;
 }
-/* --- ESTILOS PARA LA PÁGINA DEL LIBRO --- */
+
+/* --- ESTILOS PARA LA PÁGINA DEL LIBRO (libro.html) --- */
 
 .book-details-page {
     display: flex;
