@@ -1,0 +1,152 @@
+/* --- Variables de Color y Fuentes (para fácil modificación) --- */
+:root {
+    --bg-color: #0d0d0d;
+    --text-color: #e0e0e0;
+    --accent-color: #00ffff; /* Neón Azul */
+    --secondary-color: #9400ff; /* Púrpura */
+    --container-width: 900px;
+    --font-title: 'Orbitron', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
+/* --- Estilos Generales --- */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-body);
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2 {
+    font-family: var(--font-title);
+    color: var(--accent-color);
+    text-transform: uppercase;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+/* --- Header y Navegación --- */
+header {
+    background-color: rgba(13, 13, 13, 0.8);
+    border-bottom: 1px solid var(--accent-color);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(5px); /* Efecto cristalino */
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--font-title);
+    font-size: 1.5em;
+    color: var(--accent-color);
+    text-shadow: 0 0 5px var(--accent-color);
+}
+
+nav a {
+    color: var(--text-color);
+    margin-left: 20px;
+    font-weight: bold;
+}
+nav a.active, nav a:hover {
+    color: var(--accent-color);
+    text-shadow: 0 0 3px var(--accent-color);
+}
+
+
+/* --- Contenido Principal --- */
+main {
+    padding: 60px 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.glow {
+    text-shadow: 0 0 8px var(--accent-color), 0 0 12px var(--accent-color);
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #a0a0a0;
+    max-width: 700px;
+    margin-bottom: 50px;
+}
+
+/* --- Módulo de Libro Destacado --- */
+.featured-book {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 30px;
+    border: 1px solid #333;
+    border-left: 3px solid var(--accent-color);
+}
+
+.book-info {
+    flex: 2;
+}
+
+.book-cover {
+    flex: 1;
+    max-width: 250px;
+}
+.book-cover img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+/* --- Botón de Acción --- */
+.btn {
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    padding: 12px 25px;
+    font-family: var(--font-title);
+    text-transform: uppercase;
+    margin-top: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 15px var(--accent-color);
+}
+
+
+/* --- Footer --- */
+footer {
+    border-top: 1px solid #333;
+    text-align: center;
+    padding: 30px 0;
+    color: #666;
+    font-size: 0.9em;
+}
